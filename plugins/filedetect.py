@@ -1,7 +1,8 @@
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, ForceReply
+from helper.txt import mr, AUTH_USERS
 
-@Client.on_message(filters.private & filters.reply)
+@Client.on_message(filters.private & filters.reply & filters.user(AUTH_USERS))
 async def refunc(client, message):
     reply_message = message.reply_to_message
     if (reply_message.reply_markup) and isinstance(reply_message.reply_markup, ForceReply):
