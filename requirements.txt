@@ -1,0 +1,9 @@
+aiofiles
+motor
+Pillow
+humanize
+hachoir
+pyrogram
+TgCrypto
+pymongo
+dnspython
