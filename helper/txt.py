@@ -23,6 +23,12 @@ Repo Link : https://github.com/TEAM-PYRO-BOTZ/PYRO-RENAME-BOT
 License Link : https://github.com/TEAM-PYRO-BOTZ/PYRO-RENAME-BOT/blob/main/LICENSE
 """
 
+import os
+
+id_pattern = re.compile(r'^.\d+$')
+
+AUTH_USERS = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('AUTH_USERS', '').split()]
+
 class mr(object):
     PROGRESS_BAR = """\n
 ╭━━━━❰ᴘʀᴏɢʀᴇss ʙᴀʀ❱━➣
