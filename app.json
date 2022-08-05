@@ -16,16 +16,16 @@
             "description": "Your API Hash From my.telegram.org ",
             "value": ""
         },
-        "FORCE_SUB": {
-            "description": "Your force sub channel user name without [@] ",
+        "PREMIUM_SESSION": {
+            "description": "Your premium telegram account session with pyrogram",
             "value": "",
-            "required": false 
+            "required": true 
         },
         "BOT_TOKEN": {
             "description": "Your Bot Token From @BotFather",
             "value": ""
         },
-        "ADMIN": {
+        "AUTH_USERS": {
             "description":"Add Your User ID multiple is use space to split"
         },
         "DB_URL": {
