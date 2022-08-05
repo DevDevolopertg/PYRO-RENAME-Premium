@@ -1,4 +1,4 @@
-#  𝐏𝐘𝐑𝐎 𝐑𝐄𝐍𝐀𝐌𝐄 𝐁𝐎𝐓
+#  𝐏𝐘𝐑𝐎 𝐑𝐄𝐍𝐀𝐌𝐄 𝐁𝐎𝐓 𝙿𝚁𝙴𝙼𝙸𝚄𝙼
 
 Telegram File Renamer Bot 
 
@@ -12,14 +12,7 @@ Telegram File Renamer Bot
 
 ### DEPLOYEMENT SUPPORT
 
-<a href="https://heroku.com/deploy?template=https://github.com/TEAM-PYRO-BOTZ/PYRO-RENAME-BOT">
-  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
-
-
-
-
-
-
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/TEAM-PYRO-BOTZ/PYRO-RENAME-Premium)                                
 
 
 ## Configs 
@@ -36,9 +29,7 @@ Telegram File Renamer Bot
 
 * `DATABASE_NAME`  - Your database name from mongoDB. Default will be 'my'
 
-* `FORCE_SUB` - your force sub channel username without @ 
-
-& `START_PIC` - start message photo
+* `START_PIC` - start message photo
 
 ## Botfather Commands
 ```
