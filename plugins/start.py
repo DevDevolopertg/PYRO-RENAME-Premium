@@ -27,7 +27,7 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, ForceReply, CallbackQuery
 from pyrogram.errors import FloodWait
 import humanize
-from helper.txt import mr
+from helper.txt import mr, AUTH_USERS
 from helper.database import insert 
 from helper.utils import not_subscribed 
 
