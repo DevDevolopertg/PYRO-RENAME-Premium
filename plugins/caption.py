@@ -1,5 +1,6 @@
 from pyrogram import Client, filters 
 from helper.database import find, addcaption, delcaption 
+from helper.txt import mr, AUTH_USERS
 
 @Client.on_message(filters.private & filters.command('set_caption'))
 async def add_caption(client, message):
