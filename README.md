@@ -25,13 +25,15 @@ Telegram File Renamer Bot
 
 * `PREMIUM_SESSION` - Premium user session pyrogram 
 
-* `ADMIN` - AUTH or bot controllers id's multiple id use space to split 
+* `AUTH_USERS` - AUTH or bot controllers id's multiple id use space to split 
 
 * `DATABASE_URI`  - Mongo Database URL from https://cloud.mongodb.com/
 
 * `DATABASE_NAME`  - Your database name from mongoDB. Default will be 'my'
 
 * `START_PIC` - start message photo
+
+* `BOT_USERNAME` - your bot user name without @
 
 ## Botfather Commands
 ```
