@@ -36,6 +36,9 @@ START_PIC = environ.get("START_PIC", "https://telegra.ph/file/04d08445dce68c9a57
 
 @Client.on_message(filters.private & filters.command(["start"]))
 async def start(client, message):
+    if message.from_user.id != AUTH_USERS:
+        await message.reply_text("Sorry This Bot is use only premium users 🙏 or make your owen bot  bot repo https://github.com/TEAM-PYRO-BOTZ/PYRO-RENAME-Premium ", disable_web_page_preview = True)                      
+        return
     insert(int(message.chat.id))
     await message.reply_photo(
        photo=START_PIC,
@@ -54,7 +57,7 @@ async def start(client, message):
     return
 
 
-@Client.on_message(filters.private & (filters.document | filters.audio | filters.video))
+@Client.on_message(filters.private & (filters.document | filters.audio | filters.video) & filters.user(AUTH_USERS))
 async def rename_start(client, message):
     file = getattr(message, message.media.value)
     filename = file.file_name
