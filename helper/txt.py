@@ -40,7 +40,6 @@ class mr(object):
 
     ABOUT_TXT = """
 ╭───────────⍟
-├🤖 𝙼𝚈 𝙽𝙰𝙼𝙴 : {}
 ├👑 𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁𝚂 : <a href=https://t.me/PYRO_BOTZ/53>𝗧𝗘𝗔𝗠 𝗣𝗬𝗥𝗢 𝗕𝗢𝗧𝗭</a> 
 ├👨‍💻 𝙿𝚁𝙾𝙶𝚁𝙰𝙼𝙴𝚁 : <a href=https://github.com/lntechnical2>𝙻𝙽 𝚃𝙴𝙲𝙷.𝚐𝚒𝚝</a>
 ├📕 𝙻𝙸𝙱𝚁𝙰𝚁𝚈 : <a href=https://github.com/pyrogram>𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼</a>
