@@ -21,7 +21,9 @@ Telegram File Renamer Bot
 
 * `API_ID` - From my.telegram.org 
 
-* `API_HASH` - From my.telegram.org 
+* `API_HASH` - From my.telegram.org
+
+* `PREMIUM_SESSION` - Premium user session pyrogram 
 
 * `ADMIN` - AUTH or bot controllers id's multiple id use space to split 
 
