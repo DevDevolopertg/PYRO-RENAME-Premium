@@ -8,6 +8,7 @@ import os
 import humanize
 from PIL import Image
 import time
+from bot import Bot
 
 @Client.on_callback_query(filters.regex('cancel'))
 async def cancel(bot,update):
@@ -77,7 +78,7 @@ async def doc(bot,update):
      c_time = time.time() 
      try:
         if type == "document":
-           await bot.send_document(
+           await bot.USER.send_document(
 		    update.message.chat.id,
                     document=file_path,
                     thumb=ph_path, 
@@ -85,7 +86,7 @@ async def doc(bot,update):
                     progress=progress_for_pyrogram,
                     progress_args=( "𝚃𝚁𝚈𝙸𝙽𝙶 𝚃𝙾 𝚄𝙿𝙻𝙾𝙰𝙳𝙸𝙽𝙶....",  ms, c_time   ))
         elif type == "video": 
-            await bot.send_video(
+            await bot.USER.send_video(
 		    update.message.chat.id,
 		    video=file_path,
 		    caption=caption,
