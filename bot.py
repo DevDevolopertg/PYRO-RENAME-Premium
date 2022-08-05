@@ -1,7 +1,8 @@
 import os 
 import logging 
-from pyrogram import Client
-from user import *
+from pyrogram import Client, __version__
+from user import User, LOGGER
+import pyromod.listen
 
 logging.getLogger().setLevel(logging.INFO)
  
@@ -11,7 +12,9 @@ API_ID = int(os.environ.get("API_ID", ""))
 
 API_HASH = os.environ.get("API_HASH", "")
 
-class Bot(Client):
+class Bot(Client):  
+    USER: User = None
+    USER_ID: int = None
 
     def __init__(self):
         super().__init__(
@@ -23,17 +26,25 @@ class Bot(Client):
             plugins={"root": "plugins"},
             sleep_threshold=5,
         )
-
+        self.LOGGER = LOGGER
+  
     async def start(self):
-       await super().start()
-       me = await self.get_me()
-       self.mention = me.mention
-       self.username = me.username 
-       logging.info(f"{me.first_name} 𝚂𝚃𝙰𝚁𝚃𝙴𝙳 ⚡️⚡️⚡️")
-        
+        await super().start()
+        usr_bot_me = await self.get_me()
+        self.set_parse_mode("html")
+        self.LOGGER(__name__).info(
+            f"@{usr_bot_me.username}  started! "
+        )
+        self.USER, self.USER_ID = await User().start()
+
     async def stop(self, *args):
-      await super().stop()
-      logging.info("Bot Stopped")
-        
-bot = Bot()
-bot.run()
+        await super().stop()
+        self.LOGGER(__name__).info("Bot stopped. Bye.")
+
+
+
+
+
+
+
+
