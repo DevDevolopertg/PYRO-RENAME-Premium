@@ -43,8 +43,6 @@ delthumb - Delete Thumbnail
 set_caption - set a custom caption
 see_caption - see your custom caption
 del_caption - delete custom caption
-users - admin only
-broadcast - admin only
 ```
 
 ## ❣️Thanks to
@@ -56,10 +54,10 @@ broadcast - admin only
    <p> lntechnical YT </p>
   </a>
 
-## 🤩 INSPIRATION
+## USER SESSIONS Kanged From 
 
-<a href="https://youtube.com/c/MoTech_YT">
-   <p>❣️ MoTech 🔥</p>
+<a href="https://github.com/subinps/Forward_2.0">
+   <p>subinps - Forward_2.0</p>
   </a>
 
 ## ⚠️ DISCLAIMER ⚠️
