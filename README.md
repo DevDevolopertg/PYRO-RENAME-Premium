@@ -10,6 +10,10 @@ Telegram File Renamer Bot
 </p>
 </p>
 
+⚠️ IMPORTANT DISCLAIMER
+
+NOTE : If You Make The A Bot With Your Premium String Session Only Do It In Your Own Risk. We Don't Own Anything Related To That.
+
 ### DEPLOYEMENT SUPPORT
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/TEAM-PYRO-BOTZ/PYRO-RENAME-Premium)                                
