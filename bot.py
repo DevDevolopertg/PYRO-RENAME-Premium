@@ -2,7 +2,7 @@ import os
 import logging 
 from pyrogram import Client, __version__
 from user import User, LOGGER
-import pyromod.listen
+# import pyromod.listen
 
 logging.getLogger().setLevel(logging.INFO)
  
